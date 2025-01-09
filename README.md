@@ -14,6 +14,8 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
 - Error Handling
 - Environment Management
 
+- ![Data Flow](./images/data_flow.png)
+
 ## Features
 - Fetches real-time weather data for multiple cities
 - Displays temperature (°F), humidity, and weather conditions

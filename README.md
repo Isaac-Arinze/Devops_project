@@ -69,6 +69,8 @@ Git workflow for project development
 Error handling in distributed systems
 Cloud resource management
 
+![Data Flow](./images/data_flow.png)
+
 Future Enhancements
 
 Add weather forecasting

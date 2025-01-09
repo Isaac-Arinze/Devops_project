@@ -14,7 +14,7 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
 - Error Handling
 - Environment Management
 
-- ![Data Flow](./images/data_flow.png)
+
 
 ## Features
 - Fetches real-time weather data for multiple cities
@@ -31,8 +31,13 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
   - boto3 (AWS SDK)
   - python-dotenv
   - requests
+ 
+- Success message of uploaded object to s3 storage bucket
+- - ![Data Flow](./images/data_flow.png)
 
 ```markdown
+
+
 ## Project Structure
 weather-dashboard/
   src/

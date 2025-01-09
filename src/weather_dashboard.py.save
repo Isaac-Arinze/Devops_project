@@ -12,8 +12,8 @@ class WeatherDashboard:
     def __init__(self):
         self.api_key = os.getenv('OPENWEATHER_API_KEY')
         self.bucket_name = os.getenv('AWS_BUCKET_NAME')
-        self.bucket_region = os.getenv('REGION')
-        self.s3_client = boto3.client('s3')
+        self.s3_client = boto3.client('s3', region_name=os.getenv('AWS_REGION'))
+
 
     def create_bucket_if_not_exists(self):
         """Create S3 bucket if it doesn't exist"""
@@ -93,7 +93,7 @@ def main():
             # Save to S3
             success = dashboard.save_to_s3(weather_data, city)
             if success:
-                print(f"Weather data for {city} saved successfully to S3!")
+                print(f"Weather data for {city} saved to S3!")
         else:
             print(f"Failed to fetch weather data for {city}")
 
